@@ -7,11 +7,11 @@
 *后期会更新哦，有兴趣的小伙伴可以关注下，准备加上一些自带定时器的控件，定时器与控件的生命周期绑定，完全不再操心定时器的任何问题。*
 
 ### 导入工程
-'<pod 'CYTimer’>'
+```pod 'CYTimer’```
 
 ### 使用方式，6个类方法
 
-```
+```Objective-C
 /// NSTimer的Target-Action实现方式，自动检测runloop并添加，  
 ///内部解决了循环引用问题，内部自动调用了invalidate，避免内存泄漏  
 /// @param ti 调用间隔，单位 s  
@@ -81,7 +81,7 @@ bindTo:(id)aTarget block:(void (^)(CYTimer *timer))block API_AVAILABLE(ios(8.0))
 ```
 ### 回调方法
 
-```
+```Objective-C
 - (void)applicationDidBecomeActiveWithTimer:(CYTimer*)timer currentTimeInterval:    
 (NSTimeInterval)timeInterval;
 

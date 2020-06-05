@@ -8,5 +8,5 @@ s.authors = { '马春雨' => '943051580@qq.com' }
 s.source = { :git => 'https://github.com/clarkIsMe/CYTimer.git', :tag => s.version.to_s }
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
-s.source_files = 'CYTimer/CYTimer/*.{h,m}'
+s.source_files = 'CYTimer/*.{h,m}'
 end

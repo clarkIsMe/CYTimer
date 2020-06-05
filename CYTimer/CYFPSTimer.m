@@ -141,7 +141,7 @@ id _Nullable (* _Nullable fps_msgSend)(id, SEL, _Nullable id) = (id (*)(id, SEL,
 }
 
 
-- (void)setFrameInterval:(NSInteger)frameInterval {
+- (void)setFrameInterval:(NSUInteger)frameInterval {
     NSAssert(frameInterval >= 0, @"frameInterval 要求大于等于0");
     _frameInterval = frameInterval;
 }

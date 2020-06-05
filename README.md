@@ -1,6 +1,7 @@
 # CYTimer
 
->这个库提供了6个类方法，包含了NSTimer、CADisplayLink、GCD定时器的Target-Action调用方式和Block调用方式。
+### 简介
+这个库提供了6个类方法，包含了NSTimer、CADisplayLink、GCD定时器的Target-Action调用方式和Block调用方式。
 内部解决了内存泄漏的问题，使用这个6个类方法去创建定时器，可以完全忽略定时器给我们带来的坑，让我们更加专注在业务开发上。
 同时提供了APP进入后台，进入前台，以及当前控制器生命周期的AOP回调，让我们在写相关场景的业务时代码不再到处飞了。
 
@@ -15,7 +16,7 @@ pod 'CYTimer'
 
 ```Objective-C
 /// NSTimer的Target-Action实现方式，自动检测runloop并添加，  
-///内部解决了循环引用问题，内部自动调用了invalidate，避免内存泄漏  
+/// 内部解决了循环引用问题，内部自动调用了invalidate，避免内存泄漏  
 /// @param ti 调用间隔，单位 s  
 /// @param aTarget 目标对象  
 /// @param aSelector 回调方法  

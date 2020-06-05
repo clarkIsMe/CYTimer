@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0804BB002484E1690089514B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BAFF2484E1690089514B /* AppDelegate.m */; };
+		0804BB062484E1690089514B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB052484E1690089514B /* ViewController.m */; };
+		0804BB0B2484E16D0089514B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0804BB0A2484E16D0089514B /* Assets.xcassets */; };
+		0804BB0E2484E16D0089514B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0804BB0C2484E16D0089514B /* LaunchScreen.storyboard */; };
+		0804BB112484E16D0089514B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB102484E16D0089514B /* main.m */; };
+		0804BB1B2484E16D0089514B /* CYTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB1A2484E16D0089514B /* CYTimerDemoTests.m */; };
+		0804BB262484E16E0089514B /* CYTimerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB252484E16E0089514B /* CYTimerDemoUITests.m */; };
+		0804BB362484E2280089514B /* CYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB352484E2280089514B /* CYTimer.m */; };
+		0804BB392484F5E90089514B /* CYNormalTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB382484F5E90089514B /* CYNormalTimer.m */; };
+		0804BB3C2484F5F70089514B /* CYFPSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB3B2484F5F70089514B /* CYFPSTimer.m */; };
+		0804BB3F2484F6020089514B /* CYGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB3E2484F6020089514B /* CYGCDTimer.m */; };
+		0804BB4224850ED60089514B /* CYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB4124850ED60089514B /* CYWeakProxy.m */; };
+		0804BB45248519FB0089514B /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB44248519FB0089514B /* BViewController.m */; };
+		0804BB4D248684890089514B /* UIViewController+ObserveLifeCyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB4C248684890089514B /* UIViewController+ObserveLifeCyle.m */; };
+		0804BB502486875E0089514B /* CYTimerPrivateEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB4F2486875E0089514B /* CYTimerPrivateEnum.m */; };
+		0804BB532486A9890089514B /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB522486A9890089514B /* CViewController.m */; };
+		0804BB562486B74E0089514B /* CYTimerPublicEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 0804BB552486B74E0089514B /* CYTimerPublicEnum.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0804BB172484E16D0089514B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0804BAF32484E1690089514B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0804BAFA2484E1690089514B;
+			remoteInfo = CYTimerDemo;
+		};
+		0804BB222484E16E0089514B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0804BAF32484E1690089514B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0804BAFA2484E1690089514B;
+			remoteInfo = CYTimerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0804BAFB2484E1690089514B /* CYTimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYTimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0804BAFE2484E1690089514B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0804BAFF2484E1690089514B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0804BB042484E1690089514B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0804BB052484E1690089514B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0804BB0A2484E16D0089514B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0804BB0D2484E16D0089514B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0804BB0F2484E16D0089514B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0804BB102484E16D0089514B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0804BB162484E16D0089514B /* CYTimerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYTimerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0804BB1A2484E16D0089514B /* CYTimerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTimerDemoTests.m; sourceTree = "<group>"; };
+		0804BB1C2484E16D0089514B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0804BB212484E16E0089514B /* CYTimerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYTimerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0804BB252484E16E0089514B /* CYTimerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTimerDemoUITests.m; sourceTree = "<group>"; };
+		0804BB272484E16E0089514B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0804BB342484E2280089514B /* CYTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTimer.h; sourceTree = "<group>"; };
+		0804BB352484E2280089514B /* CYTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTimer.m; sourceTree = "<group>"; };
+		0804BB372484F5E90089514B /* CYNormalTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNormalTimer.h; sourceTree = "<group>"; };
+		0804BB382484F5E90089514B /* CYNormalTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNormalTimer.m; sourceTree = "<group>"; };
+		0804BB3A2484F5F70089514B /* CYFPSTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYFPSTimer.h; sourceTree = "<group>"; };
+		0804BB3B2484F5F70089514B /* CYFPSTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYFPSTimer.m; sourceTree = "<group>"; };
+		0804BB3D2484F6020089514B /* CYGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYGCDTimer.h; sourceTree = "<group>"; };
+		0804BB3E2484F6020089514B /* CYGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYGCDTimer.m; sourceTree = "<group>"; };
+		0804BB4024850ED60089514B /* CYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYWeakProxy.h; sourceTree = "<group>"; };
+		0804BB4124850ED60089514B /* CYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYWeakProxy.m; sourceTree = "<group>"; };
+		0804BB43248519FB0089514B /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		0804BB44248519FB0089514B /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		0804BB492486550E0089514B /* CYTimerPublicProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTimerPublicProtocol.h; sourceTree = "<group>"; };
+		0804BB4A248656B30089514B /* CYTimerPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTimerPrivateProtocol.h; sourceTree = "<group>"; };
+		0804BB4B248684890089514B /* UIViewController+ObserveLifeCyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ObserveLifeCyle.h"; sourceTree = "<group>"; };
+		0804BB4C248684890089514B /* UIViewController+ObserveLifeCyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ObserveLifeCyle.m"; sourceTree = "<group>"; };
+		0804BB4E2486875E0089514B /* CYTimerPrivateEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTimerPrivateEnum.h; sourceTree = "<group>"; };
+		0804BB4F2486875E0089514B /* CYTimerPrivateEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTimerPrivateEnum.m; sourceTree = "<group>"; };
+		0804BB512486A9890089514B /* CViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		0804BB522486A9890089514B /* CViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		0804BB542486B74E0089514B /* CYTimerPublicEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTimerPublicEnum.h; sourceTree = "<group>"; };
+		0804BB552486B74E0089514B /* CYTimerPublicEnum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTimerPublicEnum.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0804BAF82484E1690089514B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB132484E16D0089514B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB1E2484E16E0089514B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0804BAF22484E1690089514B = {
+			isa = PBXGroup;
+			children = (
+				0804BAFD2484E1690089514B /* CYTimerDemo */,
+				0804BB192484E16D0089514B /* CYTimerDemoTests */,
+				0804BB242484E16E0089514B /* CYTimerDemoUITests */,
+				0804BAFC2484E1690089514B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0804BAFC2484E1690089514B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0804BAFB2484E1690089514B /* CYTimerDemo.app */,
+				0804BB162484E16D0089514B /* CYTimerDemoTests.xctest */,
+				0804BB212484E16E0089514B /* CYTimerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0804BAFD2484E1690089514B /* CYTimerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0804BB332484E1A20089514B /* CYTimer */,
+				0804BAFE2484E1690089514B /* AppDelegate.h */,
+				0804BAFF2484E1690089514B /* AppDelegate.m */,
+				0804BB042484E1690089514B /* ViewController.h */,
+				0804BB052484E1690089514B /* ViewController.m */,
+				0804BB43248519FB0089514B /* BViewController.h */,
+				0804BB44248519FB0089514B /* BViewController.m */,
+				0804BB512486A9890089514B /* CViewController.h */,
+				0804BB522486A9890089514B /* CViewController.m */,
+				0804BB0A2484E16D0089514B /* Assets.xcassets */,
+				0804BB0C2484E16D0089514B /* LaunchScreen.storyboard */,
+				0804BB0F2484E16D0089514B /* Info.plist */,
+				0804BB102484E16D0089514B /* main.m */,
+			);
+			path = CYTimerDemo;
+			sourceTree = "<group>";
+		};
+		0804BB192484E16D0089514B /* CYTimerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0804BB1A2484E16D0089514B /* CYTimerDemoTests.m */,
+				0804BB1C2484E16D0089514B /* Info.plist */,
+			);
+			path = CYTimerDemoTests;
+			sourceTree = "<group>";
+		};
+		0804BB242484E16E0089514B /* CYTimerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0804BB252484E16E0089514B /* CYTimerDemoUITests.m */,
+				0804BB272484E16E0089514B /* Info.plist */,
+			);
+			path = CYTimerDemoUITests;
+			sourceTree = "<group>";
+		};
+		0804BB332484E1A20089514B /* CYTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0804BB342484E2280089514B /* CYTimer.h */,
+				0804BB352484E2280089514B /* CYTimer.m */,
+				0804BB372484F5E90089514B /* CYNormalTimer.h */,
+				0804BB382484F5E90089514B /* CYNormalTimer.m */,
+				0804BB3A2484F5F70089514B /* CYFPSTimer.h */,
+				0804BB3B2484F5F70089514B /* CYFPSTimer.m */,
+				0804BB3D2484F6020089514B /* CYGCDTimer.h */,
+				0804BB3E2484F6020089514B /* CYGCDTimer.m */,
+				0804BB4024850ED60089514B /* CYWeakProxy.h */,
+				0804BB4124850ED60089514B /* CYWeakProxy.m */,
+				0804BB492486550E0089514B /* CYTimerPublicProtocol.h */,
+				0804BB4A248656B30089514B /* CYTimerPrivateProtocol.h */,
+				0804BB4E2486875E0089514B /* CYTimerPrivateEnum.h */,
+				0804BB4F2486875E0089514B /* CYTimerPrivateEnum.m */,
+				0804BB542486B74E0089514B /* CYTimerPublicEnum.h */,
+				0804BB552486B74E0089514B /* CYTimerPublicEnum.m */,
+				0804BB4B248684890089514B /* UIViewController+ObserveLifeCyle.h */,
+				0804BB4C248684890089514B /* UIViewController+ObserveLifeCyle.m */,
+			);
+			path = CYTimer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0804BAFA2484E1690089514B /* CYTimerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0804BB2A2484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemo" */;
+			buildPhases = (
+				0804BAF72484E1690089514B /* Sources */,
+				0804BAF82484E1690089514B /* Frameworks */,
+				0804BAF92484E1690089514B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYTimerDemo;
+			productName = CYTimerDemo;
+			productReference = 0804BAFB2484E1690089514B /* CYTimerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0804BB152484E16D0089514B /* CYTimerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0804BB2D2484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemoTests" */;
+			buildPhases = (
+				0804BB122484E16D0089514B /* Sources */,
+				0804BB132484E16D0089514B /* Frameworks */,
+				0804BB142484E16D0089514B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0804BB182484E16D0089514B /* PBXTargetDependency */,
+			);
+			name = CYTimerDemoTests;
+			productName = CYTimerDemoTests;
+			productReference = 0804BB162484E16D0089514B /* CYTimerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0804BB202484E16E0089514B /* CYTimerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0804BB302484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemoUITests" */;
+			buildPhases = (
+				0804BB1D2484E16E0089514B /* Sources */,
+				0804BB1E2484E16E0089514B /* Frameworks */,
+				0804BB1F2484E16E0089514B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0804BB232484E16E0089514B /* PBXTargetDependency */,
+			);
+			name = CYTimerDemoUITests;
+			productName = CYTimerDemoUITests;
+			productReference = 0804BB212484E16E0089514B /* CYTimerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0804BAF32484E1690089514B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = cytimerdemo;
+				TargetAttributes = {
+					0804BAFA2484E1690089514B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					0804BB152484E16D0089514B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 0804BAFA2484E1690089514B;
+					};
+					0804BB202484E16E0089514B = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 0804BAFA2484E1690089514B;
+					};
+				};
+			};
+			buildConfigurationList = 0804BAF62484E1690089514B /* Build configuration list for PBXProject "CYTimerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0804BAF22484E1690089514B;
+			productRefGroup = 0804BAFC2484E1690089514B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0804BAFA2484E1690089514B /* CYTimerDemo */,
+				0804BB152484E16D0089514B /* CYTimerDemoTests */,
+				0804BB202484E16E0089514B /* CYTimerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0804BAF92484E1690089514B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0804BB0E2484E16D0089514B /* LaunchScreen.storyboard in Resources */,
+				0804BB0B2484E16D0089514B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB142484E16D0089514B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB1F2484E16E0089514B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0804BAF72484E1690089514B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0804BB4D248684890089514B /* UIViewController+ObserveLifeCyle.m in Sources */,
+				0804BB502486875E0089514B /* CYTimerPrivateEnum.m in Sources */,
+				0804BB532486A9890089514B /* CViewController.m in Sources */,
+				0804BB062484E1690089514B /* ViewController.m in Sources */,
+				0804BB562486B74E0089514B /* CYTimerPublicEnum.m in Sources */,
+				0804BB362484E2280089514B /* CYTimer.m in Sources */,
+				0804BB392484F5E90089514B /* CYNormalTimer.m in Sources */,
+				0804BB3F2484F6020089514B /* CYGCDTimer.m in Sources */,
+				0804BB45248519FB0089514B /* BViewController.m in Sources */,
+				0804BB3C2484F5F70089514B /* CYFPSTimer.m in Sources */,
+				0804BB002484E1690089514B /* AppDelegate.m in Sources */,
+				0804BB4224850ED60089514B /* CYWeakProxy.m in Sources */,
+				0804BB112484E16D0089514B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB122484E16D0089514B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0804BB1B2484E16D0089514B /* CYTimerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0804BB1D2484E16E0089514B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0804BB262484E16E0089514B /* CYTimerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0804BB182484E16D0089514B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0804BAFA2484E1690089514B /* CYTimerDemo */;
+			targetProxy = 0804BB172484E16D0089514B /* PBXContainerItemProxy */;
+		};
+		0804BB232484E16E0089514B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0804BAFA2484E1690089514B /* CYTimerDemo */;
+			targetProxy = 0804BB222484E16E0089514B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0804BB0C2484E16D0089514B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0804BB0D2484E16D0089514B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0804BB282484E16E0089514B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0804BB292484E16E0089514B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0804BB2B2484E16E0089514B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0804BB2C2484E16E0089514B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0804BB2E2484E16E0089514B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYTimerDemo.app/CYTimerDemo";
+			};
+			name = Debug;
+		};
+		0804BB2F2484E16E0089514B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYTimerDemo.app/CYTimerDemo";
+			};
+			name = Release;
+		};
+		0804BB312484E16E0089514B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYTimerDemo;
+			};
+			name = Debug;
+		};
+		0804BB322484E16E0089514B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KT66365ZJ;
+				INFOPLIST_FILE = CYTimerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cytimerdemo.CYTimerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYTimerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0804BAF62484E1690089514B /* Build configuration list for PBXProject "CYTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0804BB282484E16E0089514B /* Debug */,
+				0804BB292484E16E0089514B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0804BB2A2484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0804BB2B2484E16E0089514B /* Debug */,
+				0804BB2C2484E16E0089514B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0804BB2D2484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0804BB2E2484E16E0089514B /* Debug */,
+				0804BB2F2484E16E0089514B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0804BB302484E16E0089514B /* Build configuration list for PBXNativeTarget "CYTimerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0804BB312484E16E0089514B /* Debug */,
+				0804BB322484E16E0089514B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0804BAF32484E1690089514B /* Project object */;
+}

@@ -115,12 +115,12 @@ bindTo:(id)aTarget block:(void (^)(CYTimer *timer))block API_AVAILABLE(ios(8.0))
 (NSTimeInterval)timeInterval;
 ```
 
->做个这个组件的初衷：  
+### 做个这个组件的初衷：  
  1、提供干净的定时器调用方式，不用考虑循环引用、内存泄漏等等问题，不用时刻想着销毁定时器，让我们更加专注在业务上。  
  2、提供不同原理实现的定时器来更好的适应业务场景。  
  3、提供适当的AOP。  
 
->需要知道的地方：  
+### 需要知道的地方：  
  1、如果你声明了CYTimer类型的成员变量，然后直接调用CYTimer的类方法去执行任务，没有用 = 给成员变量赋值，那么这个赋值过程会自动发生；如果CYTimer类型的成员变量个数超过一个，这个自动赋值的过程就不会发生了。  
  2、如果你采用CYTimer的Block方式调用，那么你仍然要注意Block内部弱引用self，这个组件是解决定时器的问题，不是block。  
  3、除了block内部你自己写的代码里注意循环引用，其它地方你将不再需要关心self是否需要弱引用，怎么样都可以。  
@@ -129,7 +129,7 @@ bindTo:(id)aTarget block:(void (^)(CYTimer *timer))block API_AVAILABLE(ios(8.0))
  6、normal和FPS的定时器都是在当前线程的runloop中，模式是 NSRunLoopCommonModes，如果你需要自己灵活设置模式，请告诉我。  
  7、block回调已经自动切回了主线程，你没必要在自己的block代码再切一次。  
 
->使用建议：  
+### 使用建议：  
  1、非动画类推荐使用用GCD的方法。  
  2、动画类的推荐使用FPS的方法。  
  3、如果你偏爱用NSTimer，那你也可以选择normal的方法，而且让你使用中不再有坑。但是它不准呀大兄弟，为啥你非得用。  

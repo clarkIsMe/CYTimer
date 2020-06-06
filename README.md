@@ -10,6 +10,8 @@
 ### 导入工程
 ```Objective-C
 pod 'CYTimer'
+
+#import "CYTimer.h"
 ```
 
 ### 使用方式，6个类方法

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'CYTimer'
-s.version = '1.0.2'
+s.version = '1.0.3'
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.summary = '对NSTimer、CADisplayLink、GCD定时器的封装，内部解决了循环引用、内存泄漏等问题，让我们更加专注在业务上，同时对Application和currentController的生命周期监控并提供了AOP回调'
 s.homepage = 'https://github.com/clarkIsMe/CYTimer.git'

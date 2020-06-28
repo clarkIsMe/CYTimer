@@ -57,8 +57,11 @@
 //        NSLog(@"1231231231");
 //    }];
     
-    [CYTimer scheduledGCDTimerWithTimeInterval:1 target:self selector:@selector(timerAction)];
+//    [CYTimer scheduledGCDTimerWithTimeInterval:1 target:self selector:@selector(timerAction)];
     
+    self.timer = [CYTimer scheduledGCDTimerWithTimeInterval:1 block:^(CYTimer * _Nonnull timer) {
+        NSLog(@"1231231");
+    }];
     
     [self.view addSubview:self.btn1];
     [self.view addSubview:self.btn2];

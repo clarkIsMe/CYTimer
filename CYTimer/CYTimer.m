@@ -105,6 +105,18 @@ static NSString *cytimerKey = @"CYTIMER_OBJC_ASSOCIATED";
 }
 
 
++ (CYTimer *)scheduledGCDTimerWithTimeInterval:(NSUInteger)interval block:(void (^)(CYTimer * _Nonnull))block {
+    CYTimer *timer = [[CYTimer alloc] init];
+    __weak typeof(timer) weakTimer = timer;
+    timer.subBlock = ^{
+        block(weakTimer);
+    };
+    CYGCDTimer *subtimer = [CYGCDTimer scheduledGCDTimerWithTimeInterval:interval bindTo:nil block:timer.subBlock];
+    timer.delegate = subtimer;
+    return timer;
+}
+
+
 #pragma mark - timer的生命周期绑定到aTarget
 
 + (void)targetReleateTimer: (CYTimer*)timer target: (id)aTarget {

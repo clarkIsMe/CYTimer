@@ -57,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 创建定时器的方法
 
+/*
+
 /// NSTimer的Target-Action实现方式，自动检测runloop并添加，内部解决了循环引用问题，内部自动调用了invalidate，避免内存泄漏
 /// @param ti 调用间隔，单位 s
 /// @param aTarget 目标对象
@@ -107,6 +109,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (CYTimer *)scheduledGCDTimerWithTimeInterval:(NSUInteger)interval bindTo:(id)aTarget block:(void (^)(CYTimer *timer))block API_AVAILABLE(ios(8.0));
 
+*/
+
+/// 暂时仅开发这个方法
+/// @param interval 调用间隔，单位 s
+/// @param block 回调
++ (CYTimer *)scheduledGCDTimerWithTimeInterval:(NSUInteger)interval block:(void (^)(CYTimer *timer))block API_AVAILABLE(ios(8.0));
+
 
 #pragma mark - CYTimer对外提供的接口
 
@@ -143,3 +152,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 NS_ASSUME_NONNULL_END
+
